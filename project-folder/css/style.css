@@ -4,11 +4,14 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+body {
+    position: absolute;
+}
 .header {
     background-color: rgb(253, 177, 35);
     display: flex;
-    justify-content: space-around;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 0px 6%;
 }
 .nav {
     margin: auto 90px;
@@ -20,21 +23,24 @@
 }
 .imageContainer1 {
     display: flex;
+    
 }
 .imageTop {
+    border-top: 3px solid rgb(255, 255, 255);
     background-image: url("/images/hero-image.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
+
 }
 .imageText1 {
     background-color: white;
+    margin-left: 37%;
     position: absolute;
     bottom: 40px;
-    margin-left: 40%;
-    padding: 10px;
+    padding: 10px 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .imageContainer2 {
@@ -97,4 +103,150 @@
     height: 100%;
     object-fit: cover;
     border: 6px solid rgb(186, 202, 232);;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    background-color: rgb(253, 177, 35);
+}
+.bottomNav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.imageContainerSecondPage {
+    display: flex;
+}
+.imageTop2 {
+    background-image: url("/images/hamburger1.jpg");
+    background-size: cover;
+    background-position: 100% 63%;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.imageTextSecondPage {
+    background-color: white;
+    position: absolute;
+    bottom: 40px;
+    margin-left: 37%;
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.recipeOverview {
+    background-color: #DADFEA;
+    height: 100px;
+    padding: 20px 105px;
+}
+.recipeContainer {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+.recipeContainer :nth-child(4) {
+    justify-self: flex-end;
+    margin-right: 130px;
+}
+.recipeContainer p {
+    font-size: 18px;
+    padding-bottom: 8px;
+    margin-right: 150px;
+}
+.recipeLabel {
+    font-weight: 700;
+}
+.bengalBurger {
+    margin: 60px;
+    text-align: center;
+    position: relative;
+}
+.review {
+    padding-left: 10px;
+    font-size: 15px;
+    display: inline-block;
+}
+.starContainer{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.clip-star {
+    background: #A63223;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+  }
+.button {
+    background: #A63223;
+    border-radius: 17px;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 15px 10px;
+  }
+.icon {
+    margin-top: 15px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3px;
+}
+.buttonContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.description {
+    background-color: #DADFEA;
+    height: 200px;
+    text-align: center;
+    width: 87%;
+    margin: 0px auto;
+}
+.description p {
+    width: 60%;
+    padding-top: 35px;
+    margin: 0px auto;
+    font-size: 20px;
+    color: #575656;
+    font-weight: 700;
+    max-height: 130px;
+}
+.recipe {
+    margin: 50px 105px 50px 105px;
+    margin-top: 80px;
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+}
+.leftRecipe {
+    margin-left: 23px;
+}
+.rightRecipe {
+    width: 50%;
+    
+}
+ol li {
+    padding: 15px 0px;
+}
+ol :nth-child(9) {
+    padding-top: 0px
+}
+.leftRecipe h2 {
+   margin: 0px -19px;
+}
+.rightRecipe h2 {
+    margin: 0px -19px;
+}
+h6 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 16px;
+    margin-top: 10px;
 }
